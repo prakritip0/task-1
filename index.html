@@ -5,13 +5,206 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 1</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Task 1</title>
 </head>
 
 <body>
+    <div class="home">
+        <nav>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                </svg>
+            </a>
+        </nav>
+        <div class="homeContainer">
+            <section class="top">
+                <h1>People at Globaly</h1>
+                <div class="toggleContainer">
+                    <div class="toggleBox toggleActive" id="cardView">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+                        </svg>
+                    </div>
+                    <div class="toggleList" id="listView">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section class="collection collectionCard" id="collection">
+                <div class="addNew">
+                    <a href="add.html">
+                        <div class="addNewSymbol">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </div>
+                        <p>Add New</p>
+                    </a>
+                </div>
+                <div class="item1 card">
+                    <div class="showAtFirst">
+                        <div class="pplImage">
+                            <img src="images/shradhdad.jpeg" alt="her">
+                        </div>
+                        <h2 class="name">Shradhda Didi</h2>
+                        <p class="tag">HR</p>
+                    </div>
+                    <div class="hideAtFirst">
+                        <p class="pplDescription">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <div class="buttons">
+                            <button>read more</button>
+                            <button>read less</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item2 card">
+                    <div class="showAtFirst">
+                        <div class="pplImage">
+                            <img src="images/sashildai.jpeg" alt="him">
+                        </div>
+                        <h2 class="name">Sashil Dai</h2>
+                        <p class="tag">SWE</p>
+                    </div>
+                    <div class="hideAtFirst">
+                        <p class="pplDescription">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book.</p>
+                        <div class="buttons">
+                            <button>read more</button>
+                            <button>read less</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item3 card">
+                    <div class="showAtFirst">
+                        <div class="pplImage">
+                            <img src="images/bisheshdai.jpeg" alt="him">
+                        </div>
+                        <h2 class="name">Bishesh Dai</h2>
+                        <p class="tag">SWE</p>
+                    </div>
+                    <div class="hideAtFirst">
+                        <p class="pplDescription">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book.</p>
+                        <div class="buttons">
+                            <button>read more</button>
+                            <button>read less</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item4 card">
+                    <div class="showAtFirst">
+                        <div class="pplImage">
+                            <img src="images/saraddai.jpeg" alt="him">
+                        </div>
+                        <h2 class="name">Sarad Dai</h2>
+                        <p class="tag">SWE</p>
+                    </div>
+                    <div class="hideAtFirst">
+                        <p class="pplDescription">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book.</p>
+                        <div class="buttons">
+                            <button>read more</button>
+                            <button>read less</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item5 card">
+                    <div class="showAtFirst">
+                        <div class="pplImage">
+                            <img src="" alt="him">
+                        </div>
+                        <h2 class="name">Ashwin</h2>
+                        <p class="tag">Intern</p>
+                    </div>
+                    <div class="hideAtFirst">
+                        <p class="pplDescription">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book.</p>
+                        <div class="buttons">
+                            <button>read more</button>
+                            <button>read less</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item6 card">
+                    <div class="showAtFirst">
+                        <div class="pplImage">
+                            <img src="images/rajat.jpeg" alt="him">
+                        </div>
+                        <h2 class="name">Rajat</h2>
+                        <p class="tag">Intern</p>
+                    </div>
+                    <div class="hideAtFirst">
+                        <p class="pplDescription">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book.</p>
+                        <div class="buttons">
+                            <button>read more</button>
+                            <button>read less</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-    <script src="index.js"></script>
+        <script src="index.js"></script>
+    </div>
 </body>
 
 </html>
