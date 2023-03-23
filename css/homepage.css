@@ -249,42 +249,42 @@ nav svg {
 }
 
 .item1:hover {
-    background-image: url('images/shradhdad.jpeg');
+    background-image: url('../images/shradhdad.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
 .item2:hover {
-    background-image: url('images/sashildai.jpeg');
+    background-image: url('../images/sashildai.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
 .item3:hover {
-    background-image: url('images/bisheshdai.jpeg');
+    background-image: url('../images/bisheshdai.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
 .item4:hover {
-    background-image: url('images/saraddai.jpeg');
+    background-image: url('../images/saraddai.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
 .item5:hover {
-    background-image: url('');
+    background-image: url('../images/ashim.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
 .item6:hover {
-    background-image: url('images/rajat.jpeg');
+    background-image: url('../images/rajat.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -387,8 +387,8 @@ nav svg {
 }
 
 .pplDescription {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     color: #fff;
     font-family: sans-serif;
-    line-height: 0.8rem;
+    line-height: 0.9rem;
 }
