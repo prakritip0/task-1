@@ -42,11 +42,72 @@
             </a>
         </nav>
         <div class="addContainer">
+            <div class="addHeader">
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <h2>Add new people</h2>
+            </div>
+            <div class="inputSection">
+                <form action="" id="allInputs">
+                    <div class="uploadPhoto">
+                        <div class="photoDisplay" id="photoDisplay">
+                        </div>
+                        <input type="file" id="uploadPhotoBox" style="display:none;"
+                            accept="image/jpeg, image/png, image/jpg">
+                        <label for="uploadPhotoBox">Upload Photo</label>
+                    </div>
+                    <div class="yourName">
+                        <p>Name</p>
+                        <input type="text" id="yourName">
+                    </div>
+                    <div class="ourStory">
+                        <p>How did we meet?</p>
+                        <textarea></textarea>
+                    </div>
+                    <div class="knowEachOther">
+                        <p>Do we know eachother from outside?</p>
+                        <input type="radio" id="knowOutside">
+                        <label for="knowOutside">Yes</label>
+                        <input type="radio" name="No" id="dontKnowOutside">
+                        <label for="dontKnowOutside">No</label>
+                    </div>
+                    <div class="momo">
+                        <p>Do you like mo:mo?
+                        </p>
+                        <input type="checkbox" id="yesMomo">
+                        <label for="yesMomo">Yes</label>
+                        <input type="checkbox" id="loveMomo">
+                        <label for="loveMomo">Hell Yeah</label>
+                    </div>
+                    <div class="contactNumber">
+                        <p>Your Number</p>
+                        <input type="number" name="" id="contactNumber">
+                    </div>
+                </form>
+                <div class="submitForm">
+                    <button class="submitBtn" id="submitBtn">Submit</button>
+                    <p>*submittng this form legally binds you to treat me with momos</p>
+                </div>
+            </div>
+            <div class="modal" id="submitModal">
+                <div class="modal-content">
+                    <p>Do you want to submit the information?</p>
+                    <div class="modalButtons">
+                        <button id="modalYes">Yes</button>
+                        <button id="modalNo">No</button>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="addpage.js"></script>
 </body>
 
 </html>
