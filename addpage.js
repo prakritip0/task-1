@@ -25,9 +25,22 @@ modalOptNo.addEventListener("click", () => {
 // photo upload funcitonality starts
 
 const uploadPhotoBox = document.getElementById("uploadPhotoBox");
-const photoDisplay = document.getElementById("photoDisplay");
+const photoDisplayed = document.getElementById("photoDisplayed");
+console.log(photoDisplayed);
 
-uploadPhotoBox.addEventListener("change", () => {
-    const uploadedFile = uploadPhotoBox.files;
+uploadPhotoBox.addEventListener("change", (e) => {
+    // console.log(uploadPhotoBox)
+    const uploadedFile = uploadPhotoBox.files[0];
+    console.log(uploadedFile);
+
+    if (uploadedFile) {
+        const reader = new FileReader();
+        reader.addEventListener('load', () => {
+            photoDisplayed.setAttribute("src", reader.result);
+        });
+        reader.readAsDataURL(uploadedFile);
+    }
 })
+
+
 
