@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Outfit:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    max-width: 100%;
+    background: #9367bb;
+    font-family: "Merriweather", sans-serif;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin: 4rem 2rem;
+    max-height: 100vh;
+}
+
+nav {
+    height: 80vh;
+    width: 5rem;
+    background-color: #70128a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 0px solid #1A2036;
+    border-radius: 1rem;
+
+}
+
+nav a {
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    border: 0px solid;
+    border-radius: 0.5rem;
+}
+
+nav a:hover {
+    background-color: #9367bb;
+}
+
+nav a:hover svg {
+    color: #fff;
+}
+
+nav svg {
+    color: #B1B9D8;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+
+}
+
+.galleryHeader {
+    height: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.galleryHeader a {
+    height: 100%;
+    width: 100%;
+}
+
+.galleryHeader a svg {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery {
+    margin-left: 7%;
+    padding: 0.3rem;
+    width: 80%;
+    max-height: 70%;
+    border: 0px solid;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-areas:
+        "gImage1 gImage2 gImage3 gImage4"
+        "gImage5 gImage5 gImage3 gImage6"
+        "gImage7 gImage7 gImage8 gImage6"
+        "gImage7 gImage7 gImage9 gImage9"
+    ;
+    gap: 0.3rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    object-fit: cover;
+}
+
+.gImage1 {
+    grid-area: gImage1;
+}
+
+.gImage2 {
+    grid-area: gImage2;
+}
+
+.gImage3 {
+    grid-area: gImage3;
+}
+
+.gImage4 {
+    grid-area: gImage4;
+}
+
+.gImage5 {
+    grid-area: gImage5;
+}
+
+.gImage6 {
+    grid-area: gImage6;
+}
+
+.gImage7 {
+    grid-area: gImage7;
+}
+
+.gImage8 {
+    grid-area: gImage8;
+}
+
+.gImage9 {
+    grid-area: gImage9;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0px solid;
+    border-radius: 1rem;
+
+}
