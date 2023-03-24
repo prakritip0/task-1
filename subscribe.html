@@ -55,12 +55,23 @@
             </div>
             <div class="subscribeContent">
                 <p class="wantUpdate">Want more updates on people I meet at Globaly?</p>
-                <strong>Subscribe</strong>
-                <p>to my weekly Newsletter</p>
-                <p class="enterEmail">Enter your email:</p>
-                <input type="email" placeholder="yourname@gmail.com">
-
+                <div class="subscriptionText">
+                    <strong>Subscribe</strong>
+                    <p class="weeklyText">to my weekly Newsletter!!!</p>
+                </div>
+                <form id="emailInput">
+                    <input type="email" placeholder="yourname@gmail.com" class="emailInput" d>
+                </form>
                 <button id="submitSubscription">Subscribe</button>
+            </div>
+            <div class="modal" id="submitModal">
+                <div class="modal-content">
+                    <p>Do you want to submit the information?</p>
+                    <div class="modalButtons">
+                        <button id="modalYes">Yes</button>
+                        <button id="modalNo">No</button>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -68,7 +79,7 @@
 
     </div>
 
-    <script src="js/homepage.js"></script>
+    <script src="js/subscribe.js"></script>
     </div>
 </body>
 
