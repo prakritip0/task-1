@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Outfit:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    max-width: 100%;
+    background: #9367bb;
+    font-family: "Merriweather", sans-serif;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin: 4rem 2rem;
+    max-height: 100vh;
+}
+
+nav {
+    height: 80vh;
+    width: 5rem;
+    background-color: #70128a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 0px solid #1A2036;
+    border-radius: 1rem;
+
+}
+
+nav a {
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    border: 0px solid;
+    border-radius: 0.5rem;
+}
+
+nav a:hover {
+    background-color: #9367bb;
+}
+
+nav a:hover svg {
+    color: #fff;
+}
+
+.pointerDescription {
+    visibility: hidden;
+}
+
+nav svg {
+    color: #B1B9D8;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+
+}
+
+.homeContainer {
+    width: 100%;
+    margin-right: 2rem;
+}
+
+.top {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top h1 {
+    color: #70128a;
+    font-size: 2rem;
+}
+
+.toggleContainer {
+    width: 5rem;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #B1B9D8;
+    border-radius: 0.3rem;
+}
+
+.toggleContainer svg {
+    color: #B1B9D8;
+    width: 100%;
+}
+
+.toggleContainer>div {
+    display: flex;
+    align-items: center;
+    width: 2.5rem;
+    padding: 0.2rem 0.4rem;
+}
+
+
+.toggleActive {
+    background-color: #B1B9D8;
+}
+
+.toggleContainer svg {
+    color: #70128a;
+}
+
+.collection {
+    margin-top: 1.5rem;
+    overflow: scroll;
+}
+
+/* different styles for card and list view */
+
+.collectionCard {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    row-gap: 0.6rem;
+}
+
+.collectionList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+}
+
+.collectionList>div {
+    height: 5rem;
+    width: 100%;
+    border: 0px solid;
+    border-radius: 1rem;
+}
+
+.collectionCard>div {
+    height: 15rem;
+    width: 12rem;
+    border: 0px solid;
+    border-radius: 1rem;
+}
+
+.collectionCard .addNew {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.collectionList .addNew {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.collectionCard .addNew a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.collectionCard .addNewSymbol {
+    width: 5rem;
+    height: 5rem;
+    background-color: #9367bb;
+    border: 0px solid;
+    border-radius: 50%;
+}
+
+.collectionCard .addNewSymbol svg {
+    padding: 0.8rem;
+    height: 100%;
+    color: #B1B9D8;
+    width: 100%;
+}
+
+.collectionCard .addNewSymbol svg:hover {
+    transform: scale(1.2) ease-in;
+}
+
+.collectionCard .addNew p {
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    color: #70128a;
+}
+
+.collectionList .addNew a {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+.collectionList .addNewSymbol {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #9367bb;
+    border: 0px solid;
+    border-radius: 50%;
+}
+
+.collectionList .addNewSymbol svg {
+    padding: 0.8rem;
+    height: 100%;
+    color: #B1B9D8;
+    width: 100%;
+}
+
+.collectionList .addNewSymbol svg:hover {
+    transform: scale(1.2) ease-in;
+}
+
+.collectionList .addNew p {
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    color: #70128a;
+}
+
+.collectionCard .card {
+    background-color: #70128a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collectionList .card {
+    background-color: #70128a;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item1:hover {
+    background-image: url('../images/shradhdad.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.item2:hover {
+    background-image: url('../images/sashildai.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.item3:hover {
+    background-image: url('../images/bisheshdai.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.item4:hover {
+    background-image: url('../images/saraddai.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.item5:hover {
+    background-image: url('../images/ashim.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.item6:hover {
+    background-image: url('../images/rajat.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.card:hover .showAtFirst {
+    display: none;
+}
+
+.card:hover .hideAtFirst {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-centre;
+}
+
+.collectionCard .showAtFirst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collectionList .showAtFirst {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.collectionCard .pplImage {
+    width: 7rem;
+    height: 7rem;
+}
+
+.collectionList .pplImage {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.name {
+    margin-top: 1rem;
+    color: #B1B9D8;
+    font-size: 1.3rem;
+}
+
+.tag {
+    margin-top: 0.5rem;
+    color: #B1B9D8;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+.pplImage img {
+    width: 100%;
+    height: 100%;
+    border: 0px solid;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.collectionCard .hideAtFirst {
+    display: none;
+    font-size: 0.8rem;
+    background-color: rgba(16, 16, 16, 0.3);
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.collectionList .hideAtFirst {
+    display: none;
+    font-size: 0.8rem;
+    background-color: rgba(16, 16, 16, 0.3);
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+
+}
+
+.buttons {
+    margin-top: 1rem;
+}
+
+.buttons button {
+    border: 1px solid #9367bb;
+    border-radius: 5px;
+    font-size: 0.5rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #9831b5;
+    margin-right: 0.5rem;
+}
+
+.pplDescription {
+    font-size: 0.8rem;
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 0.9rem;
+}
