@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/addpage.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -21,7 +24,7 @@
                         d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                 </svg>
             </a>
-            <a href="homepage.html">
+            <a href="addpage.html">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -77,22 +80,24 @@
                     </div>
                     <div class="ourStory">
                         <p>How did we meet?</p>
-                        <textarea placeholder="share our story..."></textarea>
+                        <textarea placeholder="share our story..." maxlength="300"></textarea>
                     </div>
                     <div class="knowEachOther">
                         <p>Do we know eachother from outside?</p>
-                        <input type="radio" id="knowOutside">
+                        <input type="radio" name="knowAnswer" id=" knowOutside">
                         <label for="knowOutside">Yes</label>
-                        <input type="radio" name="No" id="dontKnowOutside">
+                        <input type="radio" name="knowAnswer" id="dontKnowOutside">
                         <label for="dontKnowOutside">No</label>
                     </div>
                     <div class="momo">
                         <p>Do you like mo:mo?
                         </p>
-                        <input type="checkbox" id="yesMomo">
+
+                        <input type="checkbox" id="yesMomo" name="momo" onclick="selectOnlyThis(this)">
                         <label for="yesMomo">Yes</label>
-                        <input type="checkbox" id="loveMomo">
+                        <input type="checkbox" id="loveMomo" name="momo" onclick="selectOnlyThis(this)">
                         <label for="loveMomo">Hell Yeah</label>
+
                     </div>
                     <div class="contactNumber">
                         <p>Your Number</p>

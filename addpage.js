@@ -26,12 +26,12 @@ modalOptNo.addEventListener("click", () => {
 
 const uploadPhotoBox = document.getElementById("uploadPhotoBox");
 const photoDisplayed = document.getElementById("photoDisplayed");
-console.log(photoDisplayed);
+// console.log(photoDisplayed);
 
 uploadPhotoBox.addEventListener("change", (e) => {
     // console.log(uploadPhotoBox)
     const uploadedFile = uploadPhotoBox.files[0];
-    console.log(uploadedFile);
+    // console.log(uploadedFile);
 
     if (uploadedFile) {
         const reader = new FileReader();
@@ -41,6 +41,21 @@ uploadPhotoBox.addEventListener("change", (e) => {
         reader.readAsDataURL(uploadedFile);
     }
 })
+
+// photo upload funcitonality ends
+
+//checkbox functionality starts
+
+const yesMomo = document.getElementById("yesMomo");
+
+function selectOnlyThis(checkBox) {
+    var checkboxes = document.getElementsByName('momo');
+    checkboxes.forEach((item) => {
+        if (item !== checkBox) {
+            item.checked = false;
+        }
+    });
+}
 
 
 
