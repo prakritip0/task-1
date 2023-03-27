@@ -1,6 +1,10 @@
 const modal = document.getElementById("submitModal");
 const submitSubscription = document.getElementById("submitSubscription");
 
+function subscriptionButton() {
+    modal.style.display = "block";
+}
+
 const modalOptYes = document.getElementById("modalYes");
 const modalOptNo = document.getElementById("modalNo");
 
@@ -18,3 +22,6 @@ modalOptYes.addEventListener("click", () => {
 modalOptNo.addEventListener("click", () => {
     modal.style.display = "none";
 })
+
+
+

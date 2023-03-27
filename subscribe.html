@@ -59,10 +59,11 @@
                     <strong>Subscribe</strong>
                     <p class="weeklyText">to my weekly Newsletter!!!</p>
                 </div>
-                <form id="emailInput">
-                    <input type="email" placeholder="yourname@gmail.com" class="emailInput" d>
+                <form id="emailInput" name="emailForm" onsubmit="subscriptionButton">
+                    <input type="email" name="emailAddress" placeholder="yourname@gmail.com" class="emailInput"
+                        required>
+                    <button id="submitSubscription">Subscribe</button>
                 </form>
-                <button id="submitSubscription">Subscribe</button>
             </div>
             <div class="modal" id="submitModal">
                 <div class="modal-content">
