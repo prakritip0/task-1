@@ -141,6 +141,13 @@ nav svg {
 
 }
 
+.subscribeContent form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
 #emailInput {
     display: flex;
     flex-direction: column;
@@ -156,6 +163,10 @@ nav svg {
     background-color: #70128a;
     color: #fff;
     cursor: pointer;
+}
+
+#submitSubscription:hover {
+    font-size: 0.9rem;
 }
 
 .modal {
@@ -198,4 +209,10 @@ nav svg {
     width: 3rem;
     height: 1.5rem;
     color: #70128a;
+}
+
+#congrats {
+    color: #fff;
+    font-size: 2rem;
+    display: none;
 }

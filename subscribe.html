@@ -59,11 +59,15 @@
                     <strong>Subscribe</strong>
                     <p class="weeklyText">to my weekly Newsletter!!!</p>
                 </div>
-                <form id="emailInput" name="emailForm" onsubmit="subscriptionButton">
-                    <input type="email" name="emailAddress" placeholder="yourname@gmail.com" id="emailAddress"
-                        class="emailInput" required>
-                    <button id="submitSubscription">Subscribe</button>
-                </form>
+
+                <input name="emailAddress" placeholder="yourname@gmail.com" id="emailAddress" class="emailInput"
+                    required>
+                <button id="submitSubscription" onclick="validateEmail()">Subscribe</button>
+
+                <!-- <input name="emailAddress" placeholder="yourname@gmail.com" id="emailAddress" class="emailInput"
+                    required>
+                <button id="submitSubscription" type="submit" onclick="validateEmail()">Subscribe</button> -->
+                <p id="congrats">Congrats, you have subscribed to my Newsletter!!</p>
             </div>
             <div class="modal" id="submitModal">
                 <div class="modal-content">
