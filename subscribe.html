@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add People</title>
-    <link rel="stylesheet" href="css/addpage.css">
+    <link rel="stylesheet" href="css/subscribe.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
 
 </head>
 
@@ -45,8 +43,8 @@
                 </svg>
             </a>
         </nav>
-        <div class="addContainer">
-            <div class="addHeader">
+        <div class="subscribeContainer">
+            <div class="subscribeHeader">
                 <a href="index.html">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                         <path fill-rule="evenodd"
@@ -54,60 +52,23 @@
                             clip-rule="evenodd" />
                     </svg>
                 </a>
-                <h2>Add new people</h2>
+
             </div>
-            <div class="inputSection">
-                <form action="" id="allInputs">
-                    <div class="uploadPhoto">
-                        <div class="photoDisplay">
-                            <img id="photoDisplayed"
-                                src="https://i.fbcd.co/products/resized/resized-750-500/563d0201e4359c2e890569e254ea14790eb370b71d08b6de5052511cc0352313.jpg"
-                                alt="a photo">
-                        </div>
-                        <input type="file" id="uploadPhotoBox" style="display:none;"
-                            accept="image/jpeg, image/png, image/jpg">
-                        <label for="uploadPhotoBox">Upload Photo</label>
-                    </div>
-                    <div class="yourName">
-                        <div class="firstName">
-                            <p>First Name</p>
-                            <input type="text" id="yourName" placeholder="e.g: Ram">
-                        </div>
-                        <div class="lastName">
-                            <p>Last Name</p>
-                            <input type="text" id="yourName" placeholder="e.g: Phago">
-                        </div>
-                    </div>
-                    <div class="ourStory">
-                        <p>How did we meet?</p>
-                        <textarea placeholder="share our story..." maxlength="300"></textarea>
-                    </div>
-                    <div class="knowEachOther">
-                        <p>Do we know eachother from outside?</p>
-                        <input type="radio" name="knowAnswer" id=" knowOutside">
-                        <label for="knowOutside">Yes</label>
-                        <input type="radio" name="knowAnswer" id="dontKnowOutside">
-                        <label for="dontKnowOutside">No</label>
-                    </div>
-                    <div class="momo">
-                        <p>Do you like mo:mo?
-                        </p>
-
-                        <input type="checkbox" id="yesMomo" name="momo" onclick="selectOnlyThis(this)">
-                        <label for="yesMomo">Yes</label>
-                        <input type="checkbox" id="loveMomo" name="momo" onclick="selectOnlyThis(this)">
-                        <label for="loveMomo">Hell Yeah</label>
-
-                    </div>
-                    <div class="contactNumber">
-                        <p>Your Number</p>
-                        <input type="number" name="" id="contactNumber">
-                    </div>
-                </form>
-                <div class="submitForm">
-                    <button class="submitBtn" id="submitBtn">Submit</button>
-                    <p>*submittng this form legally binds you to treat me with momos</p>
+            <div class="subscribeContent">
+                <p class="wantUpdate">Want more updates on people I meet at Globaly?</p>
+                <div class="subscriptionText">
+                    <strong>Subscribe</strong>
+                    <p class="weeklyText">to my weekly Newsletter!!!</p>
                 </div>
+
+                <input name="emailAddress" placeholder="yourname@gmail.com" id="emailAddress" class="emailInput"
+                    required>
+                <button id="submitSubscription" onclick="validateEmail()">Subscribe</button>
+
+                <!-- <input name="emailAddress" placeholder="yourname@gmail.com" id="emailAddress" class="emailInput"
+                    required>
+                <button id="submitSubscription" type="submit" onclick="validateEmail()">Subscribe</button> -->
+                <p id="congrats">Congrats, you have subscribed to my Newsletter!!</p>
             </div>
             <div class="modal" id="submitModal">
                 <div class="modal-content">
@@ -120,9 +81,12 @@
             </div>
 
         </div>
+
+
     </div>
 
-    <script src="addpage.js"></script>
+    <script src="js/subscribe.js"></script>
+    </div>
 </body>
 
 </html>
